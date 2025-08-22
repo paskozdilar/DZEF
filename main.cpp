@@ -213,7 +213,7 @@ private:
 
 int main() {
     std::ofstream outFile("test.bin", std::ios::binary);
-    auto enc = DZEF::Encoder(outFile);
+    DZEF::Encoder enc(outFile);
 
     std::string name;
     int choice;
